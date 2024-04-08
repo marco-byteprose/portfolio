@@ -1,0 +1,27 @@
+.navigation {
+    background-color: #591225;
+} 
+
+body {
+    background-color: #F2F2F2;
+}
+
+.cover-container {
+    max-width: 42em;
+    height: 100vh;
+}
+
+.hero-banner {
+    background-color: #7E1B33;
+    height: 50vh;
+}
+
+footer {
+    border-top: 1px solid #591225;
+    height: 50px;
+    width: 100%;
+}
+
+.social {
+    font-size: 2rem;
+}

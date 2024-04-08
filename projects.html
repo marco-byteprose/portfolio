@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Portfolio</title>
+    <script src="enabler.js" defer></script>
+    <script src="enabler.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Marco</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center hero-banner text-white mb-4">
+        <div class="container">
+            <h1 class="display-4">The proof is in the pudding</h1>
+            <p class="lead">Here you'll find a showcase of my projects.</p>
+            <hr class="my-4">
+            <p>Browse through the projects and let me know if you have any questions or feedback!</p>
+            <a class="btn btn-dark btn-lg fw-bold" href="contact.html">Contact me</a>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+
+        <div class="container d-flex justify-content-center">
+            <div id="course_carousel" class="carousel carousel-dark w-75" data-bs-ride="carousel" data-bs-interval="5000" data-bs-theme="dark">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/cocktails-app.png" alt="Webpage showing cocktails" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/plant-app.png" alt="Webpage listing plants" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/donationpal-app.png" alt="Webpage of a sample profile" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#course_carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#course_carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header">
+                        Cocktail Connoisseur - The Bar
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cocktail recipes website</h5>
+                            <p class="card-text">
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-success border border-success rounded-2">MongoDB</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-secondary border border-secondary rounded-2">Express</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-dark bg-info border border-info rounded-2">React</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-warning border border-warning rounded-2">NodeJS</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-dark bg-primary border border-primary rounded-2">Docker</small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalOne">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Summary</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Project Goal</h4>
+                                <p>I am an amateur home cook and have learned that a base recipe makes experimentation in the kitchen easier and much more fun. However, when I'm hosting dinner parties, I find I spend more time searching and skippping through food blogs to find the cocktail recipe a guest requested than spending time with my guests. Even more so when there are different cocktail requests.</p>
+                                <p>This site gives me standard recipes that I can adjust when needed. And I don't have to filter through modified recipes or thousands of popup ads, saving me a lot of time, an essential factor when hosting.</p>
+                                <h4>Technologies Used</h4>
+                                <p>The dataset is stored on a MongoDB database where each document holds the details for each cocktail: recipe, ingredients, garnish, glass, and more. The backend is an API that communicates with the database and is built with Node.js and Express. For the client, the React library is used with custom hooks. And finally, for deployment, the application is containerized with Docker and deployed on a secure virtual private server.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header">
+                        Growth
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">UX Case Study</h5>
+                            <p class="card-text">
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-danger border border-danger rounded-2">User Research</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-dark border border-dark rounded-2">Prototype</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-dark bg-light border border-dark rounded-2">Usability Testing</small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTwo">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Summary</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Problem</h4>
+                                <p>There are many variables when it comes to choosing plants for a specific garden space, and personally it can be overwhelming at times. 
+                                    I aim to develop a comprehensive solution for garden enthusiasts and amateurs seeking tailored native plant recommendations optimized for their garden spaces.
+                                </p>
+
+                                <p> 
+                                    This solution will account for factors such as flowering patterns, soil type, sunlight requirements, companion planting, culinary & medicinal usages, and pollinators.
+                                    By offering personalized guidance, users will be empowered to create thriving gardens that align with their goals and local ecosystem.
+                                </p>
+                                <h4>Research and Discovery</h4>
+                                <p>A standard script was developed to interview target users. The gathered data was analyzed and used to perform a <b>task analysis</b> and to determine <b>design requirements</b>. After which, personas were created to guide UI decisions based on these findings.</p>
+                                <h4>Design Process</h4>
+                                <p>I initiated the design process by conducting a hierarchical task analysis to dissect user workflows, followed by the creation of user stories to capture essential user needs and goals. Utilizing Figma, I developed a low-fidelity interactive prototype to visualize design concepts and functionality.
+                                    Then, I prepared a usability testing script with a brief scenario and crafted specific questions and metrics for evaluation. Usability testing sessions were conducted with three target users, yielding valuable feedback.
+                                </p>
+                                <p>
+                                    Based on the evaluation findings, I iteratively revised the design to enhance utility, usability, and overall user experience. These revisions were informed by user insights and aimed at addressing identified pain points and usability issues effectively.
+                                    The design evolution culminated in the development of a final hi-fidelity prototype using Figma, reflecting optimized design elements and incorporating user-tested improvements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header">
+                        DonationPal
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A GoFundMe clone</h5>
+                            <p class="card-text">
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-success border border-success rounded-2">MongoDB</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-secondary border border-secondary rounded-2">Express</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-dark bg-info border border-info rounded-2">React</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-white bg-warning border border-warning rounded-2">NodeJS</small>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-dark bg-primary border border-primary rounded-2">Google Cloud Platform</small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalThree">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Summary</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <h4>Project Goal</h4>
+                            <p>This project focuses on authentication, authorization, and an integrated payment system with Stripe.</p>
+                            <h4>Technologies Used</h4>
+                            <p>DonationPal employs the MERN stack. The MongoDB database holds several collections: users, campaigns, and donations. JSON Web Token (JWT) is used for user authentication and authorization. For donations, the Stripe API is used to securely transfer funds.</p>
+                            <p>The application is deployed on Google App Engine from the Google Cloud Platform as two services: the client as the default, and the backend as the api.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-center align-items-center mt-4 sticky-bottom">
+        <h3>Marco Anderson</h3>
+    </footer>
+  </body>
+</html>
